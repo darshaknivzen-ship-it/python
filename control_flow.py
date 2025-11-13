@@ -21,8 +21,6 @@
 
 # ========== ternary oprater============
 
-from operator import truediv
-
 
 age = 19
 
@@ -101,6 +99,54 @@ age = 18
 
 # ==================== nested loop ===============
 
-for x in range(5):
-    for y in range(3):
-        print(f"({x} , {y})")
+# for x in range(3):
+#     for y in range(5):
+#         print(f"({x} , {y})")
+
+
+# print(type(5))
+# print(type(range(5)))
+
+
+# ==========iterables==========
+
+# for x in "darshak":
+#     print(x)
+
+# shoping_cart = [1, 2, 3, 4, 5, 6]
+
+# for item in shoping_cart:
+#     print(item)
+
+# ========== while loop ==========
+
+
+# number = 100
+# while number > 0:
+#     print(number)fef
+#     number //= 2
+
+command = ""
+# while command.lower() != "quit":
+#     command = input(">")
+#     print("ECHO", command)
+
+# print(ord("B"))
+# print(ord("b"))
+
+# while True:
+#     command = input(">")
+#     print("Echo", command)
+#     if command.lower() == "quit":
+#         break
+
+
+for x in range(2, 10, 2):
+    print(f" even numbers: {x}")
+
+count = 0
+for number in range(1, 10):
+    if number % 2 == 0:
+        count += 1
+        print(number)
+print(f"we have     {count}")
