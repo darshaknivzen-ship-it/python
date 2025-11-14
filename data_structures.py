@@ -196,8 +196,29 @@
 # print(values)
 
 
-f = {"x": 1}
-s = {"x": 10, "y": 2}
+# f = {"x": 1}
+# s = {"x": 10, "y": 2}
 
-c = {**f, **s}
-print(c)
+# c = {**f, **s, "z": 1}
+# print(c)
+
+
+# ============ exer ========
+
+sentence = "This is a common   interview question"
+
+count = {}
+
+for char in sentence:
+    if char == " ":      # ignore spaces
+        continue
+    if char in count:
+        count[char] += 1
+    else:
+        count[char] = 1
+
+print(count)
+
+
+sort = sorted(count.items(), key=lambda val: val[1], reverse=True)
+print(f"max ch in used : {sort[0]}")

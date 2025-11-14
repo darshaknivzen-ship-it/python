@@ -110,13 +110,13 @@ age = 18
 
 # ==========iterables==========
 
-# for x in "darshak":
-#     print(x)
+for x in "darshak":
+    print(x)
 
-# shoping_cart = [1, 2, 3, 4, 5, 6]
+shoping_cart = [1, 2, 3, 4, 5, 6]
 
-# for item in shoping_cart:
-#     print(item)
+for item in shoping_cart:
+    print(item)
 
 # ========== while loop ==========
 
